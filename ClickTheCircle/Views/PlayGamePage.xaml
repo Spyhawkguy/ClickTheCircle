@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ClickTheCircle.Views.PlayGamePage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical">
+        <Label Text="{Binding Status}"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="50" Command="{Binding YouWinCommand}"/>
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+            <Button WidthRequest="100" HeightRequest="100" BorderRadius="10" Command="{Binding YouLoseCommand}"/>
+        </StackLayout>
+    </StackLayout>
+   
+</ContentPage>  
